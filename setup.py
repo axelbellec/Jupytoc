@@ -27,6 +27,8 @@ def long_description():
 setup(
     name=__project__,
     version=__version__,
+    url='https://github.com/axelbellec/jupytoc/',
+    download_url='https://github.com/axelbellec/jupytoc/tarball/0.0.1',
     description='A commmand-line interface to add or update TOC to Jupyter Notebooks',
     author=__author__,
     author_email='axel.bellec@outlook.fr',
@@ -34,10 +36,17 @@ setup(
     long_description=long_description(),
     install_requires=REQUIREMENTS,
     keywords='jupytoc cli command line pip jupyter notebook tool',
+    zip_safe=False,
+    include_package_data=True,
+    platforms='any',
+    licence=__licence__,
     classifiers=[
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4'
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License'
     ],
     py_modules=['jupytoc'],
     entry_points={
