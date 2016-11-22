@@ -50,3 +50,18 @@ Jupytoc has the following dependencies:
 <a href="https://opensource.org/licenses/MIT">
 <img src="http://img.shields.io/:license-mit-ff69b4.svg?style=flat-square" alt="mit"/>
 </a>
+
+## Features
+
+### Done
+
+- [X] Generate TOC a top of file
+- [X] Update an existing TOC in Markdown file
+
+### Still in development
+
+- [ ] Test suite
+- [ ] Enable custom TOC title editing
+- [ ] Handle multiple files input
+- [ ] Limit TOC entries
+- [ ] Adding TOC to all files in a directory/sub directories
