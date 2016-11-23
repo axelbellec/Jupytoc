@@ -18,7 +18,7 @@
 <br/>
 <br/>
 
-# Jupytoc
+# `$ jupytoc`
 :pushpin: A commmand-line interface to add or update TOC to Jupyter Notebooks
 
 ## Usage
@@ -57,11 +57,12 @@ Jupytoc has the following dependencies:
 
 - [X] Generate TOC a top of file
 - [X] Update an existing TOC in Markdown file
+- [X] Handle multiple files input
+- [X] Limit TOC entries
+- [X] Adding TOC to all files in a directory/sub directories
+- [X] Enable custom TOC title editing
 
 ### Still in development
 
 - [ ] Test suite
-- [ ] Enable custom TOC title editing
-- [ ] Handle multiple files input
-- [ ] Limit TOC entries
-- [ ] Adding TOC to all files in a directory/sub directories
+

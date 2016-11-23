@@ -1,17 +1,12 @@
 """ Jupytoc packaging instructions. """
 
 from setuptools import setup, find_packages
-
-__project__ = 'jupytoc'
-__author__ = 'axelbellec'
-__copyright__ = 'axelbellec'
-__licence__ = 'MIT'
-__version__ = '0.0.1'
-
+from jupytoc import __project__, __version__, __author__, __licence__
 
 README = 'README.md'
 REQUIREMENTS = [
-    'click==6.6'
+    'click==6.6',
+    'emoji==0.3.9'
 ]
 
 
@@ -48,10 +43,9 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License'
     ],
-    py_modules=['jupytoc'],
     entry_points={
         'console_scripts': [
-            'jupytoc = jupytoc:cli'
+            'jupytoc = jupytoc.jupytoc:cli'
         ]
     }
 )
