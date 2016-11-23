@@ -7,6 +7,9 @@
 <div align="center">
 	<a href="https://badge.fury.io/py/jupyter"><img src="https://badge.fury.io/py/jupyter.svg" alt="PyPI version" height="18"></a>
 	<a href="https://requires.io/github/axelbellec/Jupytoc/requirements/?branch=master"><img src="https://requires.io/github/axelbellec/Jupytoc/requirements.svg?branch=master" alt="Requirements Status" /></a>
+	<a href="https://opensource.org/licenses/MIT">
+	<img src="http://img.shields.io/:license-mit-ff69b4.svg?style=flat-square" alt="mit"/>
+	</a>
 </div>
 
 <br/>
@@ -23,9 +26,49 @@
 
 ## Usage
 
+### Simplest usage
+
 ```sh
-$ jupytoc <your_notebook>.ipynb
+$ jupytoc <jupyter_notebook>
 ```
+
+### CLI args/otps
+
+```sh
+$ jupytoc --help
+Usage: jupytoc [OPTIONS] [NOTEBOOKS]...
+
+Options:
+  -R, --recursive         build TOC for all subdirectories recursively
+  -l, --maxlevel INTEGER  limit TOC entries to headings only up to the
+                          specified level
+  -t, --title TEXT        custom TOC title
+  -s, --stdout            print to stdout
+  --help                  Show this message and exit.
+```
+
+### Adding (or update) TOC to all notebooks in a directory and sub directories
+
+```sh
+$ jupytoc .
+```
+
+### Custom TOC title
+
+Use `--title` option to specify a custom TOC title (Markdown formatted).  
+e.g. : 
+```sh
+$ jupytoc --title '**Contents**'
+```
+
+### Maximum heading level 
+
+Use `--maxlevel` option to limit TOC entries to a certain level.
+By default, Jupyter Notebook headings are limited to 6 levels.
+
+### Print generated TOC to stdout
+
+Use `--stdout` flag to print to stdout.
 
 ## Installation
 
@@ -45,11 +88,6 @@ Jupytoc has the following dependencies:
 
 - [click](http://click.pocoo.org/6/): a command line library for Python
 
-## License
-
-<a href="https://opensource.org/licenses/MIT">
-<img src="http://img.shields.io/:license-mit-ff69b4.svg?style=flat-square" alt="mit"/>
-</a>
 
 ## Features
 
@@ -61,8 +99,8 @@ Jupytoc has the following dependencies:
 - [X] Limit TOC entries
 - [X] Adding TOC to all files in a directory/sub directories
 - [X] Enable custom TOC title editing
+- [X] Print TOC to stdout
 
 ### Still in development
 
 - [ ] Test suite
-

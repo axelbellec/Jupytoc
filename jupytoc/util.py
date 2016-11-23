@@ -14,7 +14,7 @@ TO_EXCLUDE = ['.ipynb_checkpoints']
 def find_notebooks_recursively(root_path='.'):
     for root, dirs, files in os.walk(root_path, topdown=True):
         for name in files:
-            if os.path.join(root, name).endswith(_NOTEBOOK_EXTENSION) and os.path.basename(root) not in _TO_EXCLUDE:
+            if os.path.join(root, name).endswith(NOTEBOOK_EXTENSION) and os.path.basename(root) not in TO_EXCLUDE:
                 yield os.path.join(root, name)
 
 
