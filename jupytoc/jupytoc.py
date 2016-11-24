@@ -123,16 +123,17 @@ class Jupytoc(object):
 def cli(notebooks, recursive, maxlevel, title, stdout, delete):
     """ A commmand-line interface to add/update/delete TOC to Jupyter Notebooks
 
-    Usage: jupytoc [OPTIONS] [NOTEBOOKS]...
+    Examples:
+        - Simplest usage:
 
-    Options:
-      -R, --recursive         build TOC for all subdirectories recursively
-      -l, --maxlevel INTEGER  limit TOC entries to headings only up to the
-                              specified level
-      -t, --title TEXT        custom TOC title
-      -s, --stdout            print to stdout
-      -d, --delete            remove TOC from notebook file
-      --help                  Show this message and exit.
+        ```sh
+        $ jupytoc <jupyter_notebook>
+        ```
+
+        - To add TOC for all files in a directory, just launch:
+        ```sh
+        $ jupytoc .
+        ```
 
     """
     if len(notebooks) == 0:
