@@ -121,7 +121,8 @@ class Jupytoc(object):
 @click.option('-s', '--stdout', default=False, is_flag=True, help='print to stdout')
 @click.option('-d', '--delete', default=False, is_flag=True, help='remove TOC from notebook file')
 def cli(notebooks, recursive, maxlevel, title, stdout, delete):
-    """ A commmand-line interface to add/update/delete TOC to Jupyter Notebooks
+    """ 
+    A commmand-line interface to add/update/delete TOC to Jupyter Notebooks
 
     Examples:
         - Simplest usage:
@@ -136,7 +137,7 @@ def cli(notebooks, recursive, maxlevel, title, stdout, delete):
         ```
 
     """
-    if len(notebooks) == 0:
+    if len(notebooks) == 0 and not recursive:
         click.secho(
             '\t{}  You must pass at least 1 notebook.'.format(EMOJI_FAILURE),
             fg='red')

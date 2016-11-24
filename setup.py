@@ -23,7 +23,7 @@ setup(
     name=__project__,
     version=__version__,
     url='https://github.com/axelbellec/jupytoc/',
-    download_url='https://github.com/axelbellec/Jupytoc/archive/0.0.6.tar.gz',
+    download_url='https://github.com/axelbellec/Jupytoc/archive/0.1.0.tar.gz',
     description='A commmand-line interface to add or update TOC to Jupyter Notebooks',
     author=__author__,
     author_email='axel.bellec@outlook.fr',
