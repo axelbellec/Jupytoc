@@ -22,7 +22,7 @@
 <br/>
 
 # `$ jupytoc`
-:pushpin: A commmand-line interface to add or update TOC to Jupyter Notebooks
+:pushpin: A commmand-line interface to add/update/delete TOC to Jupyter Notebooks
 
 ## Usage
 
@@ -30,6 +30,11 @@
 
 ```sh
 $ jupytoc <jupyter_notebook>
+```
+
+To add toc for all files in a directory, just launch:
+```sh
+$ jupytoc .
 ```
 
 ### CLI args/otps
@@ -44,6 +49,7 @@ Options:
                           specified level
   -t, --title TEXT        custom TOC title
   -s, --stdout            print to stdout
+  -d, --delete            remove TOC from notebook file
   --help                  Show this message and exit.
 ```
 
@@ -66,9 +72,25 @@ $ jupytoc --title '**Contents**'
 Use `--maxlevel` option to limit TOC entries to a certain level.
 By default, Jupyter Notebook headings are limited to 6 levels.
 
+```sh
+$ jupytoc --maxlevel 2
+```
+
 ### Print generated TOC to stdout
 
 Use `--stdout` flag to print to stdout.
+
+```sh
+$ jupytoc --stdout
+```
+
+### Deleting TOC 
+
+Use `--delete` option to delete a TOC.
+
+```sh
+$ jupytoc --delete <jupyter_notebook>
+```
 
 ## Installation
 
@@ -87,19 +109,21 @@ $ pip install git+https://github.com/axelbellec/jupytoc
 Jupytoc has the following dependencies:
 
 - [click](http://click.pocoo.org/6/): a command line library for Python
-
+- [emoji](https://github.com/carpedm20/emoji/): emoji terminal output for Python
 
 ## Features
 
 ### Done
 
-- [X] Generate TOC a top of file
-- [X] Update an existing TOC in Markdown file
-- [X] Handle multiple files input
-- [X] Limit TOC entries
-- [X] Adding TOC to all files in a directory/sub directories
-- [X] Enable custom TOC title editing
-- [X] Print TOC to stdout
+- [X] generate TOC a top of file
+- [X] add/update an existing TOC in Markdown file
+- [X] add/update TOC for all files in the current directory
+- [X] handle multiple files input
+- [X] limit TOC entries
+- [X] add/udpate TOC to all files in a directory/sub directories
+- [X] enable custom TOC title editing
+- [X] print TOC to stdout
+- [X] delete TOC option
 
 ### Still in development
 
