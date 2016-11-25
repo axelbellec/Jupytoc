@@ -23,7 +23,7 @@ before_install:
 
 install:
   - conda install --yes python=3 pip
-  - pip install -r setup/dev-requirements.txt
-  - pip install -r setup/requirements.txt
+  - make install-dev
+  - make install
 
 script: make test

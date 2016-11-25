@@ -10,6 +10,9 @@
 	<a href="https://opensource.org/licenses/MIT">
 	<img src="http://img.shields.io/:license-mit-ff69b4.svg?style=flat-square" alt="mit"/>
 	</a>
+  <a href="https://travis-ci.org/axelbellec/jupytoc">
+  <img alt="Build Status" src="https://travis-ci.org/axelbellec/Jupytoc.svg?branch=master">
+  </a>
 </div>
 
 <br/>
@@ -136,8 +139,4 @@ Jupytoc has the following dependencies:
 __1. Why do my link anchors generated with `jupytoc` not work when the notebook is read on Github?__
 
 GitHub rending concerning `.ipynb` notebooks do not let us to navigate through links. 
-
-### Why does my link anchors generated with `jupytoc` doesn't work when the notebook is read on Github ?
-
-GitHub rending concerning `.ipynb` notebooks doesn't let us to navigate through links. 
-
+ 
