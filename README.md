@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="jupytoc_logo"/>
+  <img src="misc/logo.png" alt="jupytoc_logo"/>
 </div>
 
 <br/>
@@ -128,3 +128,16 @@ Jupytoc has the following dependencies:
 ### Still in development
 
 - [ ] Test suite
+
+
+## FAQ
+
+
+__1. Why do my link anchors generated with `jupytoc` not work when the notebook is read on Github?__
+
+GitHub rending concerning `.ipynb` notebooks do not let us to navigate through links. 
+
+### Why does my link anchors generated with `jupytoc` doesn't work when the notebook is read on Github ?
+
+GitHub rending concerning `.ipynb` notebooks doesn't let us to navigate through links. 
+
