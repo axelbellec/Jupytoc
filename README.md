@@ -10,7 +10,7 @@
 	<a href="https://opensource.org/licenses/MIT">
 	<img src="http://img.shields.io/:license-mit-ff69b4.svg?style=flat-square" alt="mit"/>
 	</a>
-  <a href="https://travis-ci.org/axelbellec/jupytoc">
+  <a href="https://travis-ci.org/axelbellec/Jupytoc">
   <img alt="Build Status" src="https://travis-ci.org/axelbellec/Jupytoc.svg?branch=master">
   </a>
   <a href='https://coveralls.io/github/axelbellec/Jupytoc?branch=master'><img src='https://coveralls.io/repos/github/axelbellec/Jupytoc/badge.svg?branch=master' alt='Coverage Status' /></a>
