@@ -30,7 +30,7 @@ install-dev: ## install dev-dependencies
 
 .PHONY: test
 test: ## launch test suite
-	@pytest --verbose --capture=no tests/
+	pytest --verbose --capture=no  --cov=$(PACKAGE) tests/
 
 .PHONY: help
 help: ## print this message
