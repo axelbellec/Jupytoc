@@ -13,6 +13,7 @@
   <a href="https://travis-ci.org/axelbellec/jupytoc">
   <img alt="Build Status" src="https://travis-ci.org/axelbellec/Jupytoc.svg?branch=master">
   </a>
+  <a href='https://coveralls.io/github/axelbellec/Jupytoc?branch=master'><img src='https://coveralls.io/repos/github/axelbellec/Jupytoc/badge.svg?branch=master' alt='Coverage Status' /></a>
 </div>
 
 <br/>

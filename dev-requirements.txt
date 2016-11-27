@@ -1,1 +1,7 @@
+# Tests
 pytest==3.0.4
+sure==1.4.0
+# Test coverage
+python-coveralls==2.9.0
+coverage==4.0.3
+pytest-cov==2.4.0
