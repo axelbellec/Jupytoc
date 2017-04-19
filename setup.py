@@ -18,7 +18,6 @@ def long_description():
     except IOError:
         return 'Failed to read ' + README
 
-
 setup(
     name=__project__,
     version=__version__,
@@ -34,7 +33,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
     platforms='any',
-    licence=__licence__,
+    license=__licence__,
     classifiers=[
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
