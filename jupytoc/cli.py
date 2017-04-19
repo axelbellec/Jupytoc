@@ -30,13 +30,15 @@ def cli(notebooks, recursive, maxlevel, title, stdout, delete):
         for notebook in notebooks:
             if os.path.isdir(notebook):
                 notebooks += tuple(
-                    ipynb for ipynb in os.listdir(notebook)
+                    os.path.join(notebook, ipynb) for ipynb in os.listdir(notebook)
                     if ipynb.endswith(NOTEBOOK_EXTENSION)
                 )
                 notebooks = get_tuple_without_item(notebooks, notebook)
 
         if recursive:
             notebooks += tuple(find_notebooks_recursively())
+
+        notebooks = sorted(list(set(list(notebooks))))
 
         click.secho('{}  Jupytoc is building TOC for {} notebook(s)'.format(
             EMOJI_JUPYTOC, len(notebooks)), bold=True)

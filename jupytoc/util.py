@@ -1,5 +1,7 @@
 import os
 
+from jupytoc.constants import NOTEBOOK_EXTENSION, TO_EXCLUDE
+
 
 def find_notebooks_recursively(root_path='.'):
     for root, _, files in os.walk(root_path, topdown=True):

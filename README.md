@@ -30,6 +30,8 @@
 
 ## Usage
 
+![toc_build](misc/toc_built.png)
+
 ### Simplest usage
 
 ```sh
