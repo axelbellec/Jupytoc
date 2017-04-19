@@ -1,8 +1,7 @@
 # Tests
-pytest==3.0.5
-sure==1.4.0
+pytest==3.0.7
+sure==1.4.5
 # Test coverage
-python-coveralls==2.9.0
-coverage==4.2
+python-coveralls==2.9.1
+coverage==4.3.4
 pytest-cov==2.4.0
-
