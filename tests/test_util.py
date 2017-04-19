@@ -1,6 +1,5 @@
 import pytest
 import sure
-import click
 
 from click.testing import CliRunner
 

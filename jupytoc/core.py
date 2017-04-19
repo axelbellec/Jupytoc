@@ -1,11 +1,8 @@
-import os
-
 import click
-import emoji
 import json
 
 
-from jupytoc.constants import EMOJI_SUCESS, EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
+from jupytoc.constants import EMOJI_SUCESS, EMOJI_WARNING, EMOJI_FAILURE
 
 
 class Jupytoc(object):

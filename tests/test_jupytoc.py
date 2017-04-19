@@ -1,4 +1,3 @@
-import click
 import sure
 
 from jupytoc import core
