@@ -14,6 +14,7 @@
   <img alt="Build Status" src="https://travis-ci.org/axelbellec/Jupytoc.svg?branch=master">
   </a>
   <a href='https://coveralls.io/github/axelbellec/Jupytoc?branch=master'><img src='https://coveralls.io/repos/github/axelbellec/Jupytoc/badge.svg?branch=master' alt='Coverage Status' /></a>
+  <a href="https://www.codacy.com/app/axel-bellec/Jupytoc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=axelbellec/Jupytoc&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/2d726823907d45af813b9aa2c53c1ec1"/></a>
 </div>
 
 <br/>
