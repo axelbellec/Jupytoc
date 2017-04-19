@@ -1,12 +1,7 @@
 from click.testing import CliRunner
 
 from jupytoc import cli
-from jupytoc.constants import EMOJI_SUCESS, EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
-
-'''
-Click instructions about testing
-http://click.pocoo.org/6/testing/
-'''
+from jupytoc.constants import EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
 
 
 def test_toc_builder_empty_files():
@@ -18,7 +13,7 @@ def test_toc_builder_empty_files():
 
         notebooks = ['notebook_test_{}.ipynb'.format(i) for i in range(2)]
         result = runner.invoke(cli, notebooks)
-        assert result.output == '{emoji_jupitoc}  Jupytoc is building TOC for {nb} notebooks\n\t{emoji_warn}  Empty file.\t[notebook_test_0.ipynb]\n\t{emoji_warn}  Empty file.\t[notebook_test_1.ipynb]\nDone.\n'.format(
+        assert result.output == '{emoji_jupitoc}  Jupytoc is building TOC for {nb} notebook(s)\n\t{emoji_warn}  Empty file.\t[notebook_test_0.ipynb]\n\t{emoji_warn}  Empty file.\t[notebook_test_1.ipynb]\nDone.\n'.format(
             nb=len(notebooks), emoji_jupitoc=EMOJI_JUPYTOC, emoji_warn=EMOJI_WARNING)
 
 

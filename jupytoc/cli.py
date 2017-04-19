@@ -38,7 +38,7 @@ def cli(notebooks, recursive, maxlevel, title, stdout, delete):
         if recursive:
             notebooks += tuple(find_notebooks_recursively())
 
-        click.secho('{}  Jupytoc is building TOC for {} notebooks'.format(
+        click.secho('{}  Jupytoc is building TOC for {} notebook(s)'.format(
             EMOJI_JUPYTOC, len(notebooks)), bold=True)
 
         if len(notebooks) == 0:
@@ -54,6 +54,3 @@ def cli(notebooks, recursive, maxlevel, title, stdout, delete):
                     fg='yellow')
 
         click.echo('Done.')
-
-if __name__ == '__main__':
-    cli()
