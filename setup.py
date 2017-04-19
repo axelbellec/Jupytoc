@@ -5,8 +5,8 @@ from jupytoc import __project__, __version__, __author__, __licence__
 
 README = 'README.md'
 REQUIREMENTS = [
-    'click==6.6',
-    'emoji==0.3.9'
+    'click>=6.6',
+    'emoji>=0.3.9'
 ]
 
 
@@ -27,7 +27,7 @@ setup(
     description='A commmand-line interface to add or update TOC to Jupyter Notebooks',
     author=__author__,
     author_email='axel.bellec@outlook.fr',
-    packages=find_packages(),
+    packages=find_packages(exclude=['tests']),
     long_description=long_description(),
     install_requires=REQUIREMENTS,
     keywords='jupytoc cli command line pip jupyter notebook tool',
