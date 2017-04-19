@@ -5,7 +5,7 @@
 <br/>
 
 <div align="center">
-	<a href="https://badge.fury.io/py/jupytoc"><img src="https://badge.fury.io/py/jupytoc.svg" alt="PyPI version" height="18"></a>
+	<!-- <a href="https://badge.fury.io/py/jupytoc"><img src="https://badge.fury.io/py/jupytoc.svg" alt="PyPI version" height="18"></a> -->
 	<a href="https://requires.io/github/axelbellec/Jupytoc/requirements/?branch=master"><img src="https://requires.io/github/axelbellec/Jupytoc/requirements.svg?branch=master" alt="Requirements Status" /></a>
 	<a href="https://opensource.org/licenses/MIT">
 	<img src="http://img.shields.io/:license-mit-ff69b4.svg?style=flat-square" alt="mit"/>
@@ -63,7 +63,7 @@ Options:
 ### Adding (or update) TOC to all notebooks in a directory and sub directories
 
 ```sh
-$ jupytoc .
+$ jupytoc -R
 ```
 
 ### Custom TOC title
