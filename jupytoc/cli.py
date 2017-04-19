@@ -2,9 +2,9 @@ import os
 
 import click
 
-from jupytoc.util import EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
+from jupytoc.constants import EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
+from jupytoc.constants import NOTEBOOK_EXTENSION
 from jupytoc.util import find_notebooks_recursively, get_tuple_without_item, is_file_not_empty
-from jupytoc.util import NOTEBOOK_EXTENSION
 from jupytoc.jupytoc import Jupytoc
 
 

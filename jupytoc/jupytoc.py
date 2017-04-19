@@ -5,7 +5,7 @@ import emoji
 import json
 
 
-from jupytoc.util import EMOJI_SUCESS, EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
+from jupytoc.constants import EMOJI_SUCESS, EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
 
 
 class Jupytoc(object):

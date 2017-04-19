@@ -65,13 +65,13 @@ $ jupytoc .
 
 ### Custom TOC title
 
-Use `--title` option to specify a custom TOC title (Markdown formatted).  
-e.g. : 
+Use `--title` option to specify a custom TOC title (Markdown formatted).
+e.g. :
 ```sh
 $ jupytoc --title '**Contents**'
 ```
 
-### Maximum heading level 
+### Maximum heading level
 
 Use `--maxlevel` option to limit TOC entries to a certain level.
 By default, Jupyter Notebook headings are limited to 6 levels.
@@ -88,7 +88,7 @@ Use `--stdout` flag to print to stdout.
 $ jupytoc --stdout
 ```
 
-### Deleting TOC 
+### Deleting TOC
 
 Use `--delete` option to delete a TOC.
 
@@ -98,14 +98,7 @@ $ jupytoc --delete <jupyter_notebook>
 
 ## Installation
 
-### **1. PyPI**
-
-```sh
-$ pip install jupytoc
-```
-
-### **2. GitHub for the latest development version**
-
+**GitHub for the latest development version**
 ```sh
 $ pip install git+https://github.com/axelbellec/jupytoc
 ```
@@ -139,5 +132,5 @@ Jupytoc has the following dependencies:
 
 __1. Why do my link anchors generated with `jupytoc` not work when the notebook is read on Github?__
 
-GitHub rending concerning `.ipynb` notebooks do not let us to navigate through links. 
- 
+GitHub rending concerning `.ipynb` notebooks do not let us to navigate through links.
+

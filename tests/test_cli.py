@@ -2,10 +2,10 @@ import click
 from click.testing import CliRunner
 
 from jupytoc import cli
-from jupytoc.util import EMOJI_SUCESS, EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
+from jupytoc.constants import EMOJI_SUCESS, EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
 
-''' 
-Click instructions about testing 
+'''
+Click instructions about testing
 http://click.pocoo.org/6/testing/
 '''
 

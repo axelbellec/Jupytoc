@@ -1,7 +1,9 @@
 import pytest
-import click
-from click.testing import CliRunner
 import sure
+import click
+
+from click.testing import CliRunner
+
 
 import jupytoc
 
