@@ -105,8 +105,8 @@ $ pip install git+https://github.com/axelbellec/jupytoc
 
 Jupytoc has the following dependencies:
 
-- [click](http://click.pocoo.org/6/): a command line library for Python
-- [emoji](https://github.com/carpedm20/emoji/): emoji terminal output for Python
+- [__`click`__](http://click.pocoo.org/6/): a command line library for Python
+- [__`emoji`__](https://github.com/carpedm20/emoji/): emoji terminal output for Python
 
 ## Features
 
