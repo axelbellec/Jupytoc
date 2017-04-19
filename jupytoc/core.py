@@ -26,10 +26,12 @@ class Jupytoc(object):
                 return (True, i)
         return (False, None)
 
-    def get_markdown_cells(self, ipynb):
+    @staticmethod
+    def get_markdown_cells(ipynb):
         return [cell for cell in ipynb['cells'] if cell['cell_type'] == 'markdown']
 
-    def get_markdown_lines(self, markdown_cells):
+    @staticmethod
+    def get_markdown_lines(markdown_cells):
         return [[line for line in cell['source']] for cell in markdown_cells]
 
     def get_headers(self, markdown_lines):
