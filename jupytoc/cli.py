@@ -5,7 +5,7 @@ import click
 from jupytoc.constants import EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
 from jupytoc.constants import NOTEBOOK_EXTENSION
 from jupytoc.util import find_notebooks_recursively, get_tuple_without_item, is_file_not_empty
-from jupytoc.jupytoc import Jupytoc
+from jupytoc.core import Jupytoc
 
 
 @click.command()

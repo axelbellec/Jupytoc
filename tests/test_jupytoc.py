@@ -1,8 +1,8 @@
 import click
 import sure
 
-from jupytoc import jupytoc
+from jupytoc import core
 
 
 def test_jupytoc_class_exists():
-    jupytoc.should.have.property('Jupytoc')
+    core.should.have.property('Jupytoc')
