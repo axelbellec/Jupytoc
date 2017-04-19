@@ -1,9 +1,11 @@
 import os
+
 import click
 
 from jupytoc.util import EMOJI_WARNING, EMOJI_FAILURE, EMOJI_JUPYTOC
 from jupytoc.util import find_notebooks_recursively, get_tuple_without_item, is_file_not_empty
 from jupytoc.util import NOTEBOOK_EXTENSION
+from jupytoc.jupytoc import Jupytoc
 
 
 @click.command()
@@ -14,8 +16,8 @@ from jupytoc.util import NOTEBOOK_EXTENSION
 @click.option('-s', '--stdout', default=False, is_flag=True, help='print to stdout')
 @click.option('-d', '--delete', default=False, is_flag=True, help='remove TOC from notebook file')
 def cli(notebooks, recursive, maxlevel, title, stdout, delete):
-    """ 
-    A commmand-line interface to add/update/delete TOC 
+    """
+    A commmand-line interface to add/update/delete TOC
     to Jupyter Notebooks.
     """
     if len(notebooks) == 0 and not recursive:

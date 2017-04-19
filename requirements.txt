@@ -2,7 +2,6 @@ appdirs==1.4.0
 click==6.7
 coverage==4.3.4
 emoji==0.4.0
-jupytoc==0.1.4
 mock==2.0.0
 packaging==16.8
 pbr==1.10.0
