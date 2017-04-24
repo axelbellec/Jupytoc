@@ -1,3 +1,5 @@
+import re
+
 import click
 import json
 
@@ -28,11 +30,15 @@ class Jupytoc(object):
 
     @staticmethod
     def get_markdown_cells(ipynb):
-        return [cell for cell in ipynb['cells'] if cell['cell_type'] == 'markdown']
+        yield [cell for cell in ipynb['cells'] if cell['cell_type'] == 'markdown']
 
     @staticmethod
     def get_markdown_lines(markdown_cells):
-        return [[line for line in cell['source']] for cell in markdown_cells]
+        yield [[line for line in cell['source']] for cell in markdown_cells]
+
+    @staticmethod
+    def clean_header(header):
+        return re.sub('[^0-9a-zA-Z]+', '-', header)
 
     def get_headers(self, markdown_lines):
         for lines in markdown_lines:
@@ -41,7 +47,7 @@ class Jupytoc(object):
                 stripped_both = stripped_right.lstrip('#')
                 stripped_wspace = stripped_both.strip()
                 level = len(stripped_right) - len(stripped_both)
-                link_anchor = lambda header: '#{}'.format(header.replace(' ', '-'))
+                link_anchor = lambda header: '#{}'.format(self.clean_header(header))
                 if level > 0 and level <= self.maxlevel:
                     yield (level, stripped_wspace, link_anchor(stripped_wspace))
 
