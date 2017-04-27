@@ -30,11 +30,11 @@ class Jupytoc(object):
 
     @staticmethod
     def get_markdown_cells(ipynb):
-        yield [cell for cell in ipynb['cells'] if cell['cell_type'] == 'markdown']
+        return [cell for cell in ipynb['cells'] if cell['cell_type'] == 'markdown']
 
     @staticmethod
     def get_markdown_lines(markdown_cells):
-        yield [[line for line in cell['source']] for cell in markdown_cells]
+        return [[line for line in cell['source']] for cell in markdown_cells]
 
     @staticmethod
     def clean_header(header):
